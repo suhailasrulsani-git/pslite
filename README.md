@@ -4,6 +4,8 @@ PSLite is a small web API server for Windows PowerShell 5.1. It works like Pode,
 
 It's built on `System.Net.HttpListener`, so there's nothing to install. The `/docs` page is like Swagger and works offline.
 
+**Watch the demo (1:19, sound on): https://suhailasrulsani-git.github.io/pslite/PSLite-demo.mp4**
+
 ```powershell
 . .\PSLite.ps1
 

@@ -6,8 +6,20 @@ It's built on `System.Net.HttpListener`, so there's nothing to install. The `/do
 
 **Watch the demo (1:19, sound on): https://suhailasrulsani-git.github.io/pslite/PSLite-demo.mp4**
 
+## Install
+
+It's on the PowerShell Gallery: https://www.powershellgallery.com/packages/PSLite
+
 ```powershell
-. .\PSLite.ps1
+Install-Module PSLite -Scope CurrentUser
+```
+
+Or download `PSLite.ps1` and dot-source it (`. .\PSLite.ps1`). Both work the same.
+
+## Quick start
+
+```powershell
+Import-Module PSLite
 
 Add-PlRoute -Method GET -Path '/hello' -Description 'Say hello' -ScriptBlock {
     @{ message = 'hello' }
@@ -77,3 +89,7 @@ The request object has `.Method .Path .Params .Query .Headers .Body .RawBody .Cl
 ```
 
 Then open `http://localhost:8080/docs`. The API key for the demo is `demo123`.
+
+## License
+
+MIT - see [LICENSE](LICENSE).
